@@ -7,7 +7,10 @@ app.use(cors());
 
 
 app.get('/', (req, res) => {
-    res.send('hello world')
+    res.json({
+        name: "Daan Verbeek",
+        age: 19
+    })
 })
 
 
