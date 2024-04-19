@@ -3,6 +3,16 @@ const cors = require("cors");
 const app = express();
 const port =  3000;
 
+const mysql = require('mysql')
+
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  database: 'eco_steps'
+})
+
+
 app.use(cors());
 
 
